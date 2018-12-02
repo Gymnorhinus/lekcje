@@ -1,4 +1,4 @@
-\\ kalkulator obwodów figur, dodac exit i dodatkowo obliczenia pola. 
+\\ kalkulator obwodów figur, dodac exit i dodatkowo obliczenia pola. Później zmienić kod tak aby obliczenia były wykonywane we funkcji, reszta ma zostać tak jak jest.
 
 #include <iostream>
 using namespace std;
