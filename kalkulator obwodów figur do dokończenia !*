@@ -1,0 +1,72 @@
+\\ kalkulator obwodów figur, dodac exit i dodatkowo obliczenia pola. 
+
+#include <iostream>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	
+	int menu;
+	while (true)
+	{
+		cout << "\n\nWybierz opcje z menu\n1. Oblicz obwod lub pole kwadradu\n2. Oblicz obwod lub pole prostokata\n3. Oblicz obwod lub pole trojkata\n4. Oblicz obwod lub pole okregu\n:";
+		cin >> menu;
+		switch (menu)
+		{
+			case 1:{
+				int a;
+				cout <<"\n Podaj dlugosc boku kwadratu:";
+				cin >>a;
+				cout <<"\n Obwod tego kwadratu wynosi:" << a+a+a+a;
+				
+				break;
+			}
+			
+			case 2:{
+				int a,b;
+				cout <<"\n Podaj dlugosc krotszego boku prostokata:";
+				cin >> a;
+				cout <<"\n Podaj dlugosc dluzszego boku prostokata:";
+				cin >> b;
+				cout <<"\n Obwod tego prostokata wynosi:" << (a+a)+(b+b);
+			
+				break;
+			}
+			
+			case 3:{
+				int a,b,c;
+				cout <<"\n Podaj pierwsza dlugosc boku trojkata:";
+				cin >> a;
+				cout << "\n Podaj druga dlugosc boku trojkata:";
+				cin >> b;
+				cout << "\n Podaj trzecia dlugosc boku prostokata:";
+				cin >> c;
+				cout << "\n Obwod tego trojkata wynosi:" << a+b+c;
+				
+				break;
+			}
+			case 4:{
+				int r;
+				cout <<"\n Podaj promien kola:";
+				cin >> r;
+				cout <<"\n Obwod kola wynosi:" << 2*3.14*r;
+				
+				break;
+			}
+			
+			
+		}
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	return 0;
+	
+	
+}
